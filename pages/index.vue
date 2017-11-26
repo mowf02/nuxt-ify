@@ -1,7 +1,7 @@
 <template>
   <main class="container -mobile-expand">
     <section class="excerpt">
-      <h1>Hi, I'm Liz - a front-end/ UX developer based in London.<span>|</span></h1>
+      <h1>Hi, I'm Liz - a front-end/ UX developer based in London.</h1>
       <span>built with nuxt & vue</span>
     </section>
   </main>
