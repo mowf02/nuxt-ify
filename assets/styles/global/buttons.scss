@@ -1,0 +1,17 @@
+/********************
+/ Buttons
+/*******************/
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: .5em 2em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all $transition--default $transition-easing--default;
+  width: 100%;
+
+  // @include breakpoint($breakpoint--tablet--large) {
+    width: auto;
+  // }
+}

@@ -1,0 +1,9 @@
+#__nuxt {
+  > div {
+    transition: 1s;
+
+    &.-enclosed {
+      background: $color-shade--black;
+    }
+  }
+}

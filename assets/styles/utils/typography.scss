@@ -1,0 +1,78 @@
+/********************
+/ For element level font
+/ styles or heading
+/ related classes e.g. .h1
+/*******************/
+
+/********************
+/ Font Families
+/*******************/
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-weight: $font-weight--regular;
+}
+
+
+/********************
+/ Font Styles
+/*******************/
+
+html {
+  font-size: 14px;
+  line-height: $line-height--base;
+  color: $color-shade--black;
+
+  @include breakpoint($breakpoint--tablet) {
+    font-size: 16px;
+  }
+
+  @include breakpoint($breakpoint--desktop) {
+    font-size: 18px;
+  }
+}
+
+p {
+  color: $color-shade--dark-grey;
+  line-height: $line-height--base;
+}
+
+h1, .h1 {
+  font-family: $font-family--base;
+  font-size: $font-size--ultra-large;
+  letter-spacing: 1.5px;
+  line-height: $line-height--small;
+  margin-top: 0;
+}
+
+h2, .h2 {
+  font-family: $font-family--base;
+  font-size: $font-size--medium;
+  font-weight: $font-weight--bold;
+  letter-spacing: 3px;
+  margin: 4rem 0 2rem;
+}
+
+h3, .h3 {
+  font-size: $font-size--base;
+  font-weight: $font-weight--super-bold;
+  line-height: $line-height--small;
+}
+
+h4, .h4 {
+  font-family: $font-family--base;
+  font-size: $font-size--tiny;
+  font-weight: $font-weight--bold;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+h5, .h5 {
+  font-size: $font-size--medium;
+  font-style: italic;
+  line-height: normal;
+}

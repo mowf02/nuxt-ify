@@ -1,0 +1,31 @@
+.container {
+  @extend %clearfix;
+  background: $color-brand--soft-red;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+
+  @include breakpoint($breakpoint--tablet--large) {
+    margin: 0 0 0 9em;
+  }
+
+  &__inside {
+    background: $color-shade--white;
+    height: 100vh;
+    padding: 10em 3em;
+
+    @include breakpoint($breakpoint--tablet--large) {
+      padding: 10em 5em;
+    }
+  }
+
+  &.-mobile-expand {
+    overflow: hidden;
+    width: 100%;
+
+    @include breakpoint($breakpoint--tablet--large) {
+      width: 90%;
+    }
+  }
+}

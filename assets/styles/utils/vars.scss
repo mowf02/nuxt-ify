@@ -1,0 +1,73 @@
+/*** SITE WIDE VARIABLES ***/
+
+// Colours
+$color-brand--soft-red     : #e69c85;
+
+// Shades
+$color-shade--black        : #323031;
+$color-shade--white        : #FFFFFF;
+$color-shade--dark-grey    : #A4A2A8;
+$color-shade--light-grey   : #eaeef1;
+
+// Transparents
+$color-transparent--black: rgba(0,0,0,0.95);
+$color-transparent--grey: rgba(255,255,255,0.2);
+$color-transparent--white: rgba(255,255,255,.85);
+
+// Prompts
+$color-prompt--error       : #DF6954;
+$color-prompt--success     : #00B9B0;
+
+// Typography
+$font-family--base         : 'Crimson Text', serif;
+
+// NB: 'Base' varies depending on breakpoint. See html declaration within typography.scss
+$font-size--gigantic       : 5.55rem; // 110px
+$font-size--ultra-large    : 3.55rem; // 64px
+$font-size--very-large     : 2.77rem; // 50px
+$font-size--large          : 1.88rem; // 34px
+$font-size--medium         : 1.33rem; // 24px
+$font-size--base           : 1rem; // 18px
+$font-size--small          : 0.88rem; // 16px
+$font-size--very-small     : 0.77rem; // 14px
+$font-size--tiny           : 0.66rem; // 12px
+$font-size--smallest       : 0.55rem; // 10px
+
+$font-weight--ultra-thin   : 100;
+$font-weight--regular      : 400;
+$font-weight--bold         : 700;
+$font-weight--super-bold   : 800;
+
+$line-height--small        : 1.3;
+$line-height--base         : 1.6;
+
+// Transition
+$transition--fast            : 0.0125s;
+$transition--default         : 0.25s;
+$transition--slow            : 0.4s;
+
+$transition-easing--default  : ease-out;
+
+// Z-Index
+$z-index--third    : 80;
+$z-index--second   : 90;
+$z-index--first    : 100;
+
+// Breakpoints
+
+// min-widths
+$breakpoint--mobile--small      : 360px;
+$breakpoint--mobile             : 480px;
+$breakpoint--tablet--small      : 608px;
+$breakpoint--tablet             : 768px;
+$breakpoint--tablet--large      : 900px;
+$breakpoint--desktop            : 1024px;
+$breakpoint--desktop--large     : 1240px;
+
+$breakpoint-max--mobile--small  : max-width 360px;
+$breakpoint-max--mobile         : max-width 480px;
+$breakpoint-max--tablet--small  : max-width 608px;
+$breakpoint-max--tablet         : max-width 768px;
+$breakpoint-max--tablet--large  : max-width 900px;
+$breakpoint-max--desktop        : max-width 1024px;
+$breakpoint-max--desktop--large : max-width 1240px;

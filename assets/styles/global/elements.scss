@@ -1,0 +1,84 @@
+@import '~assets/styles/utils/vars.scss';
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.is-disabled {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+body {
+  font-family: $font-family--base;
+  line-height: 2;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+
+  @include breakpoint($breakpoint--tablet--large) {
+    max-width: auto;
+  }
+}
+
+a {
+  color: $color-shade--black;
+  cursor: pointer;
+  display: inline;
+  opacity: 1;
+  text-decoration: none;
+  transition: $transition--default;
+
+  &:hover {
+    opacity: .4;
+  }
+}
+
+ul, ol {
+  margin-bottom: .5em;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    list-style: none;
+  }
+}
+
+figure {
+  margin: 1rem 0 2rem;
+  max-width: 100%;
+
+  > a[href*=".png"], > a[href*=".jpg"], > a[href*=".jpeg"] {
+    cursor: default;
+    pointer-events: none;
+
+    &:hover:after {
+      display: none;
+    }
+  }
+}
+
+pre {
+  background: $color-shade--light-grey;
+  margin: 2rem 0;
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

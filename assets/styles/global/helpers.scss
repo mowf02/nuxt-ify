@@ -1,0 +1,175 @@
+@import '~assets/styles/utils/all.scss';
+
+/**************************
+General
+**************************/
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity .5s;
+  transition-delay: .6s;
+}
+.fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+
+/**************************
+Utility classes
+**************************/
+
+.u-content--centered {
+  text-align: center;
+}
+.u-content--left {
+  text-align: left;
+}
+.u-content--italic {
+  font-style: italic;
+}
+.u-content--inline {
+  display: inline-block;
+}
+.u-content--block {
+  display: block;
+}
+.u-content--upper {
+  text-transform: uppercase;
+}
+.u-content--capital {
+  text-transform: capitalize;
+}
+
+.u-element--centered {
+  margin: 0 auto;
+}
+.u-element--top {
+  vertical-align: top;
+}
+
+.u-padding--b-tiny {
+  padding-bottom: 1rem;
+}
+.u-padding--b-small {
+  padding-bottom: 2rem;
+}
+.u-padding--b-regular {
+  padding-bottom: 4rem;
+}
+.u-padding--b-large {
+  padding-bottom: 8rem;
+}
+.u-padding--b-huge {
+  padding-bottom: 10rem;
+}
+
+.u-padding--t-tiny {
+  padding-top: 1rem;
+}
+.u-padding--t-small {
+  padding-top: 2rem;
+}
+.u-padding--t-regular {
+  padding-top: 4rem;
+}
+.u-padding--t-large {
+  padding-top: 8rem;
+}
+.u-padding--t-huge {
+  padding-top: 10rem;
+}
+
+.u-margin--b-tiny {
+  margin-bottom: 1rem;
+}
+.u-margin--b-small {
+  margin-bottom: 2rem;
+}
+.u-margin--b-regular {
+  margin-bottom: 4rem;
+}
+.u-margin--b-large {
+  margin-bottom: 8rem;
+}
+.u-margin--b-huge {
+  margin-bottom: 10rem;
+}
+
+.u-content--hidden {
+  display: none;
+}
+
+/**************************
+Layout
+**************************/
+.full-width {
+  width: 100%;
+}
+.two-fifths {
+  width: 100%;
+
+  // @include breakpoint($breakpoint--tablet--large) {
+    width: span(2 of 5);
+  // }
+}
+.three-fifths {
+  width: 100%;
+
+  // @include breakpoint($breakpoint--tablet--large) {
+    width: span(3 of 5);
+  // }
+}
+
+/**************************
+Animations and animation helpers
+**************************/
+@keyframes menuEntry {
+  0% {
+    right: -150%;
+  }
+  50% {
+    right: -150%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.pulse {
+  animation: pulse $transition--slow forwards;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes appearBottom {
+	0% { transform: translateY(100%); }
+	100% { transform: translateY(0); }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    left: 4rem;
+    opacity: 0;
+    top: 6rem;
+  }
+  75% {
+    left: 0;
+    opacity: 0.7;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
